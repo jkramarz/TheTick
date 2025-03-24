@@ -92,7 +92,7 @@ void http_init(void){
   // SERVER INIT
   server.on("/dos", HTTP_GET, handleDoS);
   server.on("/txid", HTTP_GET, handleTxId);
-  server.on("/clear", HTTP_GET, handleTxId);
+  server.on("/clear", HTTP_GET, clearConfig);
 
   // list directory
   server.on("/list", HTTP_GET, handleFileList);
